@@ -176,7 +176,7 @@ h3 {
   text-transform: capitalize;
   letter-spacing: $spacing;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,5 +217,25 @@ button {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.footer {
+  letter-spacing: 0.75px;
+  color: $clr-grey-4;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+
+  &__link {
+    color: $clr-primary-2;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $clr-primary-4;
+    }
   }
 }

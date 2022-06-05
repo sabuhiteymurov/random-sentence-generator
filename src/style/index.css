@@ -157,7 +157,7 @@ h3 {
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,5 +216,26 @@ button {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.footer {
+  letter-spacing: 0.75px;
+  color: #48647f;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.footer__link {
+  color: #104e7a;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__link:hover {
+  color: #2d87c8;
 }
 /*# sourceMappingURL=index.css.map */

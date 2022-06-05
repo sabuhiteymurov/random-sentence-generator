@@ -57,6 +57,12 @@ function App() {
           Generate
         </button>
       </form>
+      <footer className='footer'>
+        &copy; Copyright {new Date().getFullYear()} by{' '}
+        <a className='footer__link' href='https://github.com/MrTeymurov'>
+          Sabuhi Teymurov
+        </a>
+      </footer>
       {isLoading ? (
         <div className='spinner'>
           <AiOutlineLoading3Quarters
