@@ -1,5 +1,5 @@
 ## Random sentence generator
 
-## API
+### API
 
-[API](https://hipsum.co/the-api/)
+[Hipsum API](https://hipsum.co/the-api/)
