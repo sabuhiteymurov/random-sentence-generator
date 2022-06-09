@@ -11,11 +11,9 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAlert(false);
-
-      return () => clearTimeout(timeout);
     }, 3000);
 
-    return;
+    return () => clearTimeout(timeout);
   }, [alert]);
 
   const getText = async () => {
