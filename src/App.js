@@ -6,6 +6,17 @@ function App() {
   const [text, setText] = useState('');
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [alert, setAlert] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAlert(false);
+
+      return () => clearTimeout(timeout);
+    }, 3000);
+
+    return;
+  }, [alert]);
 
   const getText = async () => {
     try {
@@ -27,6 +38,11 @@ function App() {
       setIsError(true);
       console.error(err.message);
     }
+  };
+
+  const copyToClipboard = () => {
+    setAlert(true);
+    navigator.clipboard.writeText(text);
   };
 
   useEffect(() => {
@@ -76,7 +92,8 @@ function App() {
         </div>
       ) : (
         <article className='lorem-text'>
-          <p>{text}</p>
+          <p onClick={copyToClipboard}>{text}</p>
+          {alert && <div className='copy-alert'>Copied to clipboard</div>}
         </article>
       )}
     </section>
