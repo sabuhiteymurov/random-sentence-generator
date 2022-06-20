@@ -73,7 +73,7 @@ function App() {
       </form>
       <footer className='footer'>
         &copy; Copyright {new Date().getFullYear()} by{' '}
-        <a className='footer__link' href='https://github.com/MrTeymurov'>
+        <a className='footer__link' href='https://github.com/sabuhiteymurov'>
           Sabuhi Teymurov
         </a>
       </footer>
